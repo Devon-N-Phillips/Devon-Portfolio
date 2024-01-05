@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devon Phillips</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Devon Phillips</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">DEVON PHILLIPS</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About me</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile" class="no-border">
+        <div class="section-pic-container">
+            <img src="yungpic.jpeg" alt="Your Image" class="circular-image">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Devon Phillips</h1>
+            <p class="section_text_p2">Experience with: GIS analysis | Programming | Conservation</p>
+            <p class="section_text_p2">With Special Interest In: Urban form | Sustainability | Service</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('Devon_Phillips_Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="sendEmail()">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="Linkedin.png" alt="My Linkedin profile" class="icon" onclick="openInNewTab('https://www.linkedin.com/in/devon-phillips-962401248/')">
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="bubble-border section-with-button">
+        <p class="section_text_p1">My Skills</p>
+        <h2 class="title">Skills</h2>
+        <div class="skills-container">
+            <!-- List your skills here -->
+            <div class="skill">
+                <h3>Programming</h3>
+                <img src="HTML.png" alt="HTML Logo"><img src="CSS.png" alt="CSS Logo"><img src="Java.png" alt="Java Logo"><img src="Javascript.png" alt="Javascript Logo"><img src="Python.png" alt="Python Logo">
+                <ul>
+                    <li>HTML</li>
+                    <li>Javascript</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+            </div>            
+            <div class="skill">
+                <h3>Geospatial Analysis</h3>
+                <img src="arc.png" alt="arcGIS Logo"><img src="mapbox.png" alt="arcGIS Logo">
+                <ul>
+                    <li>ArcGIS Pro</li>
+                    <li>Mapbox</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li>Cold Calling</li>
+                    <li>Microsoft 365</li>
+                    <li>Teamwork</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>Data Science</h3>
+                <ul>
+                    <li>D3.js</li>
+                    <li>SVG</li>
+                    <li>XML</li>
+                </ul>
+            </div>
+        </div>
+        <button class="scroll-to-top">^</button>
+    </section>
+    <section id="experience" class="bubble-border section-with-button">
+        <p class="section_text_p1">My Experience</p>
+        <h2 class="title">Work Experience</h2>
+        <div class="experience-container">
+            <!-- List your work experience here -->
+            <div class="job">
+                <h3>Phonathon caller</h3>
+                <p>McGill Phonathon (September 2023 - present)</p>
+                <li>Cold calling McGill alumni/parents</li>
+                <li>Raised over $2,000 for McGill related fundraisers over a 2 month period</li>
+            </div>
+            <div class="job">
+                <h3>Silviculture laborer</h3>
+                <p>Haveman Brother (May 2022 - July 2022) <br> & Outland (May 2023 - July 2023)</p>
+                <li>Planted over 150,000 tree saplings</li>
+            </div>
+            <div class="job">
+                <h3>Corps Member</h3>
+                <p>Americorps NCCC (October 2020 - June 2021)</p>
+                <li>1,700 hours served across the west coast in Sacramento CA, Stockton CA, Tacoma WA, and Williams OR</li>
+                <li>Supported the efficient completion of daily tasks in a ten person team over
+                    the course of eight months
+                    </li>
+                <li>Aided customers over the phone and supported the creation of a large database
+                    system at the Stockton Emergency food bank
+                    </li>
+                <li>Guided incomers at the Stockton COVID vaccination supercenter</li>
+                <li>Participated in conservation efforts across Washington and Oregon</li>
+                <div class="job-details">
+                    <img src="Americorps1.JPEG" alt="Corps Member Image"><img src="Americorps2.jpg" alt="Corps Member Image"><img src="Americorps3.jpg" alt="Corps Member Image"><img src="Americorps4.jpg" alt="Corps Member Image">
+                </div>
+            </div>
+            <div class="job">
+                <h3>Field Customer Service Manager</h3>
+                <p>Xtrac Restoration (May 2019 - Aug 2019)</p>
+                <li>Worked with microsoft excel to track company analytics</li>
+                <li>Cold calling customers to inform them about the company's services
+                </li>
+                <li>Door to door sales work and correspondence with new company customers</li>
+            </div>
+        </div>
+        <button class="scroll-to-top">^</button>
+    </section>
+    <section id="education" class="bubble-border section-with-button">
+        <p class="section_text_p1">My Education</p>
+        <h2 class="title">Education</h2>
+        <div class="experience-container">
+            <!-- List your education here -->
+            <div class="school">
+                <div class="school-details">
+                    <img src="Mcgill_athletics_logo.png" alt="Mcgill Logo">
+                    <div class="school-info">
+                        <h3>Bachelor of Arts, Major Concentration Geography (AR) - Urban Studies, Minor Concentration Environment, Minor Concentration Geog IS & Remote Sensing</h3>
+                        <p>McGill University (September 2021 - present)</p>
+                        <ul>
+                            <li>CUM GPA: 3.30</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="school">
+                <div class="school-details">
+                    <img src="Strake.png" alt="strake-logo">
+                    <div class="school-info">
+                        <h3>High School Diploma</h3>
+                        <p>Strake Jesuit College Prep (Aug 2016 - May 2020)</p>
+                        <ul>
+                            <li>Graduated summa cum laude</li>
+                            <li>National Honor Society</li>
+                            <li>Honor roll</li>
+                            <li>Varsity cross country / track</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="scroll-to-top">^</button>
+    </section>
+    <section id="projects" class="bubble-border section-with-button">
+        <p class="section_text_p1">My Projects</p>
+        <h2 class="title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Geospatial Web Applications</h3>
+                <p>This website shows five applications that I created within a group setting over the course of a university semester.</p>
+                <div class="project-details">
+                    <div class="apps-container">
+                        <div class="app">
+                            <h4>App 1: Mural Storymap</h4>
+                            <p>This application is an interactive tour of murals in Montreal.</p>
+                            <p>Skills/Technologies used: Mapbox studios, Data collection</p>
+                        </div>
+                        <div class="app">
+                            <h4>App 2: Map of Montreal's Vietnamese Restaurants</h4>
+                            <p>This application is a simple representation of Vietnamese restaurants in Montreal that was created through web scraping data from <a href="https://www.restomontreal.ca/">Resto Montreal</a>. I was most heavily involved in the use of XML to scrape website data.</p>
+                            <p>Skills/Technologies used: Mapbox studios, XML</p>
+                        </div>
+                        <div class="app">
+                            <h4>App 3: Tracking Group 4</h4>
+                            <p>This app uses HTML's built-in geolocation API to display a map of our group member's movements over the course of a week. Most of my work involved the creation of a tracking app which collects the user's location data and stores it in a database.</p>
+                            <p>Skills/Technologies used: Mapbox GL JS, HTML, Javascript, Geolocation</p>
+                        </div>
+                        <div class="app">
+                            <h4>App 4: Fashion advice based on the weather in Canada</h4>
+                            <p>This application uses a weather API called tomorrow.io to find the weather conditions of a particular city in Canada and then recommends what clothes to wear through the use of a simple decision tree. I was mostly involved with the app's logic in Javascript.</p>
+                            <p>Skills/Technologies used: Mapbox studios, API usage, Javascript, HTML</p>
+                        </div>
+                        <div class="app">
+                            <h4>App 5: Tree Map of Montreal Neighborhoods</h4>
+                            <p>This final app is a data science project that displays an interactive tree map of a database showing the planting of trees in Montreal distinguished by neighborhood. My role was to collect this data and create the treemap with the use of SVG and d3.js.</p>
+                            <p>Skills/Technologies used: D3.JS, SVG, Javascript, HTML</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-color-2" onclick="window.open('https://neogeoweb.ca/group4/')">Web Apps</button>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3>Connecting Texas: Assessing the Viability of High-Speed Rail Across Texas</h3>
+                <p><b>Description:</b> This report is my proposal for the creation of a high-speed rail network throughout Texas. This project was based on the use of geospatial data collected from the web and the use of GIS to argue for the viability of this potential network.</p>
+                <p><b>Skills/Technologies used:</b> ArcGIS Pro, Microsoft Excel, Data collection and interpretation</p>
+                <button class="btn btn-color-2" onclick="window.open('Phillips_414_FINAL.pdf')">PDF Report</button>
+            </div>
+            <!-- You can add more project cards as needed -->
+        </div>
+        <button class="scroll-to-top">^</button>
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>
